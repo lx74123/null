@@ -94,28 +94,6 @@ set novisualbell
 "set t_vb=
 "set tm=500
 "
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" => Colors and Fonts
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"" Enable syntax highlighting
-syntax enable
-"
-
-try
-    colorscheme desert
-catch
-endtry
-"
-set background=dark
-"
-"" Set utf8 as standard encoding and en_US as the standard language
-set encoding=utf8
-"
-"" Use Unix as the standard file type
-set ffs=unix,dos,mac
-"
-"
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" => Files, backups and undo
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "" Turn backup off, since most stuff is in SVN, git etc. anyway...
@@ -181,10 +159,12 @@ Plug 'skywind3000/vim-auto-popmenu'
 Plug 'dense-analysis/ale'
 call plug#end()
 let g:rainbow_active = 1 "set to 0 if you want to enable it later via :RainbowToggle
-colorscheme snazzy
 " let g:OmniSharp_server_stdio = 0
 "
-"skywind3000设置---------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => skywind3000设置
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 " 设定需要生效的文件类型，如果是 "*" 的话，代表所有类型
 let g:apc_enable_ft = {'text':1, 'markdown':1, 'cs':1}
 
@@ -197,4 +177,27 @@ set completeopt=menu,menuone,noselect
 " 禁止在下方显示一些啰嗦的提示
 set shortmess+=c
 
-"skywind3000设置---------------------------------
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" => Colors and Fonts
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"" Enable syntax highlighting
+syntax enable
+try
+  "colorscheme desert
+  colorscheme snazzy
+catch
+endtry
+"
+set background=dark
+"
+"" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+"
+"" Use Unix as the standard file type
+set ffs=unix,dos,mac
+"
+"
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
