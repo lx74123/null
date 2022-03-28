@@ -119,9 +119,9 @@ set tabstop=2
 "set lbr
 "set tw=500
 "
-set ai "Auto indent
-set si "Smart indent
-set wrap "Wrap lines
+"set ai "Auto indent
+"set si "Smart indent
+"set wrap "Wrap lines
 "
 " Return to last edit position when opening files (You want this!)
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
