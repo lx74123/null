@@ -150,7 +150,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'luochen1990/rainbow'
 Plug 'connorholyday/vim-snazzy'
 Plug 'preservim/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'skywind3000/vim-dict'
 Plug 'skywind3000/vim-auto-popmenu'
@@ -200,4 +200,3 @@ set ffs=unix,dos,mac
 "
 "
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"jdjdjjdjf
