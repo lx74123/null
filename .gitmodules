@@ -1,0 +1,3 @@
+[submodule "ref/lcs"]
+	path = ref/lcs
+	url = git@github.com:lx74123/null.git
